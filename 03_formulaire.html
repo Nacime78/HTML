@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaires HTML</title>
+    <link rel="stylesheet" href="css/03_formulaire.css">
+</head>
+<body>
+    <!-- Je déclare mon formulaire avec la balise form -->
+    <form action="">
+
+    <!-- Deux manières de déclarer le lable -->
+    <!-- pseudo -->
+    <label for="pseudo">
+        <!-- input dans label -->
+        Pseudonyme
+</label>
+<input type="text" name="pseudo" id="" placehorder="exemple" required>
+
+<!-- L'id combiné à for permet de lier le label à l'input type précise le type de donnés récupéré, name sera utilisé en php pour récupérer la donnée,
+le placehorder contient le texte qui apparaît da,s l'input
+required précise au navigateur que le champs est à renseigner obligatoirement -->
+
+<label for="mdp">
+Mot de passe <span title="Le mot de passe peut contenir..."></span>
+</label>
+<input type="password" name="mdp" id="mdp" placeholder="Mot de passe" required>
+
+<br>
+<br>  
+
+<label for="email">EMAIL</label>
+<input type="email" name="email" id="email" placehorder=" votre mail">
+
+<label for="photo">Photo</label>
+<input type="file" name="photo" id="photo">
+
+<br>
+<br>
+
+<fieldset>
+    <legend>Choix multiples</legend>
+    <!-- cases à cocher checkbox -->
+    <!-- plusieurs choix -->
+
+<label for="ql" Quelle destination choisissez-vous></label>
+<p> 
+    <input type="checkbox" name="reponse01" id="q1">Italie
+    <input type="checkbox" name="reponse01" id="q1">Maroc
+    <input type="checkbox" name="reponse01" id="q2">Espagne
+    
+</p>
+<br>
+
+<!-- cases à cocher radio --> 
+
+<input type="radio" id="q2" name="reponse2">En famille
+<input type="radio" id="q2" name="reponse2">Entre amis
+<input type="radio" name="reponse3" id="q2">Solo
+<!-- un seul choix avec les boutons radio et force l'utilisateur à choisir -->
+
+</fieldset>
+
+<br>
+
+<label for="commentaires">commentaires</label>
+<textarea name="commentaires" id="commentaires" cols="30" rows="10"></textarea>
+<!-- rows=nombre de lignes - col=nombre de colonnes / caractères -->
+
+<br>
+
+<input type="submit" name="inscription" value="Envoyer">
+<!-- bouton envoie du formulaire -->
+
+<input type="reset" name="annuler" value="annuler">
+<!-- bouton pour vider le formulaire-->
+
+<br>
+
+<a href="https://developper.mozilla.org/fr/docs/Web/HTML/Element/Input" targer="_blank">Petite documentation </a>
+
+<br> 
+
+<a href="https://www.w3schools.com/html/html_form_input_types.asp" target="_blank">w3schools, les types d'input </a>
+
+
+
+</form>
+</body>
+</html>
