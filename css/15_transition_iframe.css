@@ -1,0 +1,78 @@
+body{
+    font-family: sans-serif;
+    font-size: 1.5em;
+}
+
+.left, .right{
+    margin-top: em;
+}
+
+ul{ /* Sélectionne toutes les listes <ul> */
+    list-style: none; /* Suppression des puces listes */
+    float: left; /* Effet flottant à gauche */
+    margin: 0; /* Marges extérieures */
+    padding: 0; /* Marges intérieures */
+}
+
+.left ul{
+    margin: 3.2em 0 0 0;
+}
+
+.left ul li{ /* Tous les <li> de la liste <ul> ayant la class .left */
+    border-bottom: 1px solid #f5654f;
+    border-left: 1px solid #f5654f;
+    padding: 1em;
+    width: 10em;
+}
+
+.left ul li:first-child{ /* Premier <li> de la liste <ul> ayant la class .left */
+    border-top: 1px solid #f5654f;
+}
+
+/* fin 1ère colonne*/
+
+ul.liste li{ /* Tous les <li> de la liste <ul> ayant la class .change elle même enfant de la class .right */
+    border: 1px solid #f5654f;
+}
+
+.right .change ul li{
+    border-top: 1px solid #f5654f;
+    border-right: 1px solid #f5654f;
+    padding: 1em;
+    width: 10em;
+    text-align: center;
+}
+
+.right .change ul li:first-child{
+    background-color: #5d5d5d;
+    color: #fff;
+    font-weight: bold; /* Style de la police : gras */
+}
+
+.right .change ul li:last-child{ /* Dernier <li> de la liste <ul> ayant la class .change elle même enfant d'une class .right */
+    border-bottom: 1px solid #f5654f;
+}
+
+.right .change ul:hover{
+    background: linear-gradient(#d5d5d5, #8a8a8a); /* Dégradé de couleur */
+    cursor: pointer; /* Changement de l'ffichage du curseur */
+    transform: scale(1.4); /* Échelle de zoom */
+    transition-duration: 2s; /* Durée de l'effet de transition */
+}
+
+.right .change ul:hover li:first-child{
+    background-color: #000; /* Au survol de la souris on séléctionne le premier <i> de la liste <ul> ayant la classe .changel même enfant de la class right */
+}
+
+.change:hover #premium{
+    color: #b9f2ff;
+}
+
+.change:hover #silver{
+    color: #bfc1c2;
+}
+
+.clear{
+    clear: both;
+}
+
