@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page d'accueil</title>
+    <title>Page Multimedia</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- Choisissez une police Google Font et ajoutez-là ici : -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
@@ -59,8 +59,40 @@
     </nav>
 
     <main>
-        <aside></aside>
-        <section></section>
+        <h2>Multimedia</h2>
+        <section class="VideoFond">
+            <h3>Video en Fond</h3>
+            <div class="videoTexte">
+                <video autoplay Loop>
+                    <!-- Les attributs "autoplay" => Lecture automatique et "loop" => Lecture en boucle -->
+                    <source src="video/videoBackground.webm" type="video/webm">
+                    <source src="video/videoBackground.mp4" type="video/mp4">
+                </video>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex qui omnis ullam cupiditate voluptatem adipisci enim velit a perferendis explicabo.</p>
+            </div>
+        </section>
+
+        <section>
+            <h3>Vidéo</h3>
+            <iframe width="800" height="500" src="https://www.youtube.com/embed/r3mPjnifTn0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <section class="audio">
+            <h3>Audio</h3>
+            <h4>Format MP3</h4>
+            <br>
+            <audio src="audio/son.mp3" controls></audio>
+
+            <h4>Format Ogg</h4>
+            <br>
+            <audio src="audio/son.ogg" controls></audio>
+        </section>
+
+        <section>
+            <h3>Google Map</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d420060.6446532298!2d135.13911401170813!3d34.661677978353026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e86b2acc70d7%3A0xa399ff48811f596d!2sPr%C3%A9fecture%20d&#39;Osaka%2C%20Japon!5e0!3m2!1sfr!2sfr!4v1655375040954!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
     </main>
 
     <footer></footer>

@@ -1,40 +1,50 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Zoning</title>
     <link rel="stylesheet" href="css/style.css">
-    <!-- Choisissez une police Google Font et ajoutez-là ici : -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
-    <!-- On ira ajouter dans le css ensuite : font-family: 'Nunito', sans-serif -->
-    <link rel="stylesheet" href="font-awesome/css/fontawesome.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <meta name="description" content="Un site multi pages HTML - CSS">
+    <!-- Choisissez une police Google Fonts et ajoutez-là  ici :-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Blaka+Hollow&family=Joan&family=Kufam:ital@1&family=Macondo&family=Nunito:ital,wght@1,200&family=Tiro+Devanagari+Hindi:ital@1&display=swap"
+        rel="stylesheet">
+    <!-- On ira ajouter dans le css ensuite : font-family: 'Nuito', sans-serif -->
+    <!-- <link rel="stylesheet" href="font-awesome/css/fontawesome.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <meta name="description" content=" Un site multies pages HTML - CSS">
 </head>
+
 <body>
-    
+
+    <!-- header>div*4 -->
     <header>
+
         <div id="logo">
             <a href="#logo">
                 <button type="button">
                     <i class="fas fa-arrow-alt-circle-up" aria-hidden="true"></i>
-                    <!-- fa, => classe de FontAwesome -->
-                    <!-- aria-... accès de contenus web plus facile pour les handicapés => -->
+                    <!-- fa. => classe de FontAwesome  -->
+                    <!-- aria-... accès de contenus web plus faciles pour les handicapés => -->
                     <!-- https://developer.mozilla.org/fr/docs/Accessibilit%C3%A9/ARIA -->
                 </button>
             </a>
             <img src="img/logo.png" alt="logo">
-        </div>
+        </div><!-- ./ #logo-->
 
-        <div id="slogan"><h1>Site HTML CSS Multipages</h1></div>
+        <div id="slogan">
+            <h1>Site HTML CSS Multipages</h1>
+        </div>
 
         <div id="social">
             <a href="https://www.instagram.com/" target="_blank">
                 <i class="fab fa-instagram" aria-hidden="true"></i>
             </a>
-
             <a href="https://www.facebook.com/" target="_blank">
                 <i class="fab fa-facebook" aria-hidden="true"></i>
             </a>
@@ -43,10 +53,10 @@
         <div class="clear"></div>
     </header>
 
-    <div id="activ_nav">
+    <nav id="activ_nav">
         <a href="accueil.html">Accueil</a>
         <a href="texte.html">Texte</a>
-        <a href="selecteur.html">Sélécteur</a>
+        <a href="selecteur.html">Selecteur</a>
         <a href="image.html">Image</a>
         <a href="position.html">Position</a>
         <a href="zoning.html">Zoning</a>
@@ -54,17 +64,17 @@
         <a href="liste.html">Liste</a>
         <a href="lien_menu.html">Lien & Menu</a>
         <a href="formulaire.html">Formulaire</a>
-        <a href="multimedia.html">Multimédia</a>
+        <a href="multimedia.html">Multimedia</a>
         <a href="animation.html">Animation</a>
-    </div>
-<!-- ON UTILISE QU'1 HEADER 1 NAV ET 1 FOOTER PAR PAGE -->
+    </nav>
+<!-- ON UTILISE QUE 1 HEADER 1 NAV ET 1 FOOTER PAR PAGE -->
     <main>
-        <!-- ZONING 1 -->
-        <h2>Zoning</h2>
+       <!-- ZONING 1 -->
+       <h2>Zoning</h2>
 
         <section>
             <h3>Zoning 1</h3>
-            <div class="zoning">
+            <div class="zoning1">
                 <header>
                     <p>Zone du haut</p>
                 </header>
@@ -79,43 +89,34 @@
         </section>
 
         <!-- ZONING 2 -->
-
         <section>
             <h3>Zoning 2</h3>
             <div class="zoning2">
-
                 <header>
                     <p>Zone du haut
                         <br /> HEADER
-                    </p>
+                    </p> 
                 </header>
-
                 <aside>
-                    <p>Zone de gauche
+                    <p>Zone du gauche
                         <br /> ASIDE
                     </p>
                 </aside>
-
-                <section>
+                <section class="middle">
                     <p>Zone du milieu
                         <br /> MIDDLE
                     </p>
                 </section>
-
-                <aside>
-                    <p>Zone de droite
-                        <br /> ASIDE
-                    </p>
-                </aside>
-
-                <div class="clear"></div>
-
+                 <aside>
+                     <p>Zone de droite
+                         <br /> ASIDE
+                     </p>
+                 </aside>
+                 <div class="clear"></div>
             </div>
         </section>
 
         <!-- ZONING 3 -->
-
-
         <section>
             <h3>Zoning 3</h3>
             <div class="zoning3">
@@ -124,15 +125,14 @@
                         SECTION
                     </p>
                 </section>
-
                 <section>
-                    <p>Droite <br />
+                    <p> Droite <br />
                         SECTION
                     </p>
                 </section>
                 <footer>
-                    <p>Bas <br /> 
-                        FOOTER
+                    <p>Bas 
+                        <br /> FOOTER
                     </p>
                 </footer>
                 <div class="clear"></div>
@@ -140,7 +140,6 @@
         </section>
 
         <!-- ZONING 4 -->
-
         <section>
             <h3>Zoning 4</h3>
             <div class="zoning4">
@@ -153,7 +152,7 @@
                 <section>
                     <p>SECTION</p>
                 </section>
-
+                
                 <footer>
                     <p>FOOTER</p>
                 </footer>
@@ -162,12 +161,11 @@
         </section>
 
         <!-- Zoning 5 -->
-
         <section>
             <h3>Zoning 5</h3>
             <div class="zoning5">
                 <header>
-                    <p>header</p>
+                    <p>HEADER</p>
                 </header>
                 <nav>
                     <p>NAV</p>
@@ -195,11 +193,11 @@
         </section>
 
         <!-- Zoning 6 -->
-        
         <section>
             <h3>Zoning 6</h3>
             <div class="zoning6">
                 <header>
+                    <!-- .haut$*3{haut$} -->
                     <div class="haut1">haut 1</div>
                     <div class="haut2">haut 2</div>
                     <div class="haut3">haut 3</div>
@@ -208,21 +206,23 @@
                 <nav>
                     Menu
                 </nav>
-
                 <aside>
                     Zone de gauche
                 </aside>
 
+                <!-- section>.a+.b+.clear -->
                 <section>
                     <div class="a">A</div>
                     <div class="b">B</div>
                     <div class="clear"></div>
                 </section>
 
+                <!-- section.slideshow{SlideShow} -->
                 <section class="slideshow">
                     SlideShow 
                 </section>
 
+                <!-- section>.c{C}+.d{D}+.e{E}+.f{F}+.clear  -->
                 <section>
                     <div class="c">C</div>
                     <div class="d">D</div>
@@ -230,19 +230,21 @@
                     <div class="f">F</div>
                     <div class="clear"></div>
                 </section>
-                
                 <footer class="clear">
                     Bas
                 </footer>
             </div>
         </section>
 
-
     </main>
 
-
-    <footer></footer>
+    <footer>
+        <small>
+            &copy; 2022 
+        </small>
+    </footer>
 
     <script type="text/javascript" src="js/activ.js"></script>
 </body>
+
 </html>
